@@ -1,0 +1,74 @@
+edc388566a1d drm/i915: Fix wrong escape clock divisor init for GLK
+a7340d31abac drm/i915/gvt: fix incorrect cache entry for guest page mapping
+600d3712ae12 drm/i915/dmc: protect against reading random memory
+b08ec06c94fc drm/i915/sdvo: Implement proper HDMI audio support for SDVO
+6bdc692f5c9e drm/i915/gvt: Initialize intel_gvt_gtt_entry in stack
+6600ec2600d6 drm/i915: Maintain consistent documentation subsection ordering
+360e00e290a3 drm/i915/fbc: disable framebuffer compression on GeminiLake
+2bc7ce32eb21 Revert "drm/i915/fbdev: Actually configure untiled displays"
+df4106f23d0b drm/i915/gvt: do not deliver a workload if its creation fails
+8ad895bf4b8b drm/i915/gvt: do not let pin count of shadow mm go negative
+df74e70ffec6 drm/i915/gvt: Fix MI_FLUSH_DW parsing with correct index check
+206fa92c9d52 drm/i915: Relax mmap VMA check
+d8a648cae347 drm/i915/fbdev: Actually configure untiled displays
+6a204bd5f1e6 drm/i915: Prevent a race during I915_GEM_MMAP ioctl with WC set
+4631e0b4cf46 drm/i915: Block fbdev HPD processing during suspend
+c2a354ce5458 drm/i915: always return something on DDI clock selection
+ac8b9e8e7ddd drm/i915/gvt: Fix mmap range check
+d1a5113cf41b drm/i915: Unwind failure on pinning the gen7 ppgtt
+f0e9995f7eed drm/i915/execlists: Apply a full mb before execution for Braswell
+d6ebe485da3d drm/i915/gvt: Fix tiled memory decoding bug on BDW
+1a9056407808 drm/i915: Downgrade Gen9 Plane WM latency error
+382debd2fe42 drm/i915: Disable LP3 watermarks on all SNB machines
+1beb22c52484 drm/i915: Replace some PAGE_SIZE with I915_GTT_PAGE_SIZE
+32bd1336061d drm/i915: Fix hpd handling for pins with two encoders
+67d55fb274e5 drm/i915: Fix NULL deref when re-enabling HPD IRQs on systems with MST
+72cb9a9da589 drm/i915: Fix possible race in intel_dp_add_mst_connector()
+7a268b8f1bac drm/i915/execlists: Force write serialisation into context image vs execution
+828271c43b78 drm/i915/ringbuffer: Delay after EMIT_INVALIDATE for gen4/gen5
+8ce52581567c drm/i915: Mark pin flags as u64
+a95174d79b00 drm/i915: Don't oops during modeset shutdown after lpe audio deinit
+b4aa9db0b24f drm/i915: Compare user's 64b GTT offset even on 32b
+a46a7350b1e8 drm/i915: Fix ilk+ watermarks when disabling pipes
+6d6e718e454b drm/i915: Fix error handling for the NV12 fb dimensions check
+1a25e1a1be71 drm/i915: Mark up GTT sizes as u64
+80b8d405c640 drm/i915/hdmi: Add HDMI 2.0 audio clock recovery N values
+51ad687461b4 drm/i915/icl: Fix the macros for DFLEXDPMLE register bits
+c4b7c61cdcdc drm/i915/dp: Restrict link retrain workaround to external monitors
+bf30d9c95f57 drm/i915/dp: Fix link retraining comment in intel_dp_long_pulse()
+528e652dbc8c drm/i915: Large page offsets for pread/pwrite
+811342d76160 drm/i915: Skip vcpi allocation for MSTB ports that are gone
+bc72d290f56d drm/i915: Don't unset intel_connector->mst_port
+3715b63f66e0 drm/i915: Restore vblank interrupts earlier
+a1e34bfc066b drm/i915: Use the correct crtc when sanitizing plane mapping
+49218c83e25b drm/i915/dp: Link train Fallback on eDP only if fallback link BW can fit panel's native mode
+4c9613ce556f drm/i915: Handle incomplete Z_FINISH for compressed error states
+4ca8ca9fe7dc drm/i915: Avoid compiler warning for maybe unused gu_misc_iir
+bda6b1c95751 drm/i915: Do not redefine the has_csr parameter.
+a530bf948ab7 Merge tag 'gvt-fixes-2018-09-18' of https://github.com/intel/gvt-linux into drm-intel-fixes
+7759ca3aac79 drm/i915/gvt: clear ggtt entries when destroy vgpu
+a1ac5f094301 drm/i915/gvt: request srcu_read_lock before checking if one gfn is valid
+d817de3bc186 drm/i915/gvt: Add GEN9_CLKGATE_DIS_4 to default BXT mmio handler
+db7c8f1e5f1c drm/i915/gvt: Init PHY related registers for BXT
+17dc7af70e89 drm/i915/overlay: Allocate physical registers from stolen
+50cbc03e5096 Merge tag 'gvt-fixes-2018-09-10' of https://github.com/intel/gvt-linux into drm-intel-fixes
+92a680314946 drm/i915/bdw: Increase IPS disable timeout to 100ms
+792fab2c0d45 drm/i915/gvt: Fix the incorrect length of child_device_config issue
+0a1b60d76b0a drm/i915/gvt: Fix life cycle reference on KVM mm
+2b82435cb90b drm/i915/dp_mst: Fix enabling pipe clock for all streams
+4fe967912ee8 drm/i915/dsc: Fix PPS register definition macros for 2nd VDSC engine
+399334708b4f drm/i915: Re-apply "Perform link quality check, unconditionally during long pulse"
+54ff01fd0d44 drm/i915/gvt: Give new born vGPU higher scheduling chance
+b244ffa15c8b drm/i915/gvt: Fix drm_format_mod value for vGPU plane
+b2b599fb54f9 drm/i915/gvt: move intel_runtime_pm_get out of spin_lock in stop_schedule
+b9b824a55876 drm/i915/gvt: Handle GEN9_WM_CHICKEN3 with F_CMD_ACCESS.
+c8ab5ac30ccc drm/i915/gvt: Make correct handling to vreg BXT_PHY_CTL_FAMILY
+9174c1d6196d drm/i915/gvt: emulate gen9 dbuf ctl register access
+80ab316901bc drm/i915/audio: Hook up component bindings even if displays are disabled
+299c2a904b1e drm/i915: Increase LSPCON timeout
+f013027e2665 drm/i915: Stop holding a ref to the ppgtt from each vma
+1b1b1162745e drm/i915: Free write_buf that we allocated with kzalloc.
+5b2695fd4b20 drm/i915: Fix glk/cnl display w/a #1175
+815f0ddb346c include/linux/compiler*.h: make compiler-*.h mutually exclusive
+93065ac753e4 mm, oom: distinguish blockable mode for mmu notifiers
+532c2b926dda Merge tag 'mfd-next-4.19' of git://git.kernel.org/pub/scm/linux/kernel/git/lee/mfd
